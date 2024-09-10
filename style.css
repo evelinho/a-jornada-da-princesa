@@ -1,0 +1,142 @@
+body {
+    background-image: linear-gradient(90deg, #ffadf4, #b54dd7);
+    color: white;
+    font-family: "Great Vibes", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+}
+
+p {
+    font-size: 32px;
+    width: 70%;
+    margin: 20px auto;
+    font-family: "Great Vibes";
+}
+
+    button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border-radius: 10rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: 0.15rem;
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        font-family: "Montaga";
+        margin-top: -20px;
+        border: none
+      }
+      
+      button:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(228, 48, 195); /* Substituindo $color */
+        border-radius: 10rem;
+        z-index: -2;
+      }
+      
+      button:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: rgb(179, 29, 144); /* Cor escurecida em 15% */
+        transition: all 0.3s;
+        border-radius: 10rem;
+        z-index: -1;
+      }
+      
+      button:hover {
+        color: #fff;
+      }
+      
+      button:hover:before {
+        width: 100%;
+      }
+      
+      /* Reset opcional para apresentação */
+      * {
+        font-family: Arial;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      
+      .container {
+        padding-top: 0px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+      }
+      
+      h1 {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+        color: #777;
+      }
+      
+      span {
+        display: block;
+        margin-top: 2rem;
+        font-size: 0.7rem;
+        color: #777;
+      }
+      
+      span a {
+        font-size: 0.7rem
+      
+}
+
+.passo {
+    display: none;
+    margin-top: 20vh;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+main {
+    text-align: center;
+    max-width: 90%;
+    margin-top: -10px;
+}
+
+img {
+    max-width: 90%;
+}
+
+.image-cover, .background {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.background {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: none;
+    opacity: .4;
+    z-index: -1;
+}
+.image-cover {
+    aspect-ratio: 16 / 9;
+    width: 50vw;
+    display: flex;
+    margin: auto;
+    margin-top: -50px;
+}
